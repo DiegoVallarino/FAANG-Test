@@ -21,7 +21,3 @@ faangTest2 <- function(x){
   return(abs(x)/(2))
 }
 faangTest2(x)
-=======
-vec <- Vectorize(faangTest, vectorize.args = "x")
-vec(x)
->>>>>>> 79c8b60b6df82e99b85c0680fee73193f3b5c4f8
