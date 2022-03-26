@@ -9,11 +9,9 @@ faangTest1 <- function (x) {
      else { 
          if (x == 4) {return(x*1/2)}
          else {return(x**2)}}}
-		 
-<<<<<<< HEAD
+ 
 vec <- Vectorize(faangTest1, vectorize.args = "x")
 vec(x)
-
 
 #Exercise TWO
 
