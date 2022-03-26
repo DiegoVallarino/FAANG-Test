@@ -10,7 +10,7 @@ faangTest1 <- function (x) {
          if (x == 4) {return(x*1/2)}
          else {return(x**2)}}}
 		 
-vec <- Vectorize(faangTest, vectorize.args = "x")
+vec <- Vectorize(faangTest1, vectorize.args = "x")
 vec(x)
 
 
