@@ -1,5 +1,5 @@
-#These are some of the exercises that the Tech companies put to evaluate the DS with +18 years of experience.
-#In my opinion, valueless.
+#These are some of the exercises that the FAANG companies put to evaluate the DS with +18 years of experience (my experience).
+#In my opinion, valueless if they are looking for a Director/Principal Data Scientist to add value to a business.
 
 #Exercise ONE (Example)
 x<-seq(1:10)
