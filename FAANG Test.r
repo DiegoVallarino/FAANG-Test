@@ -45,6 +45,17 @@ FactoresPrimos <- function(num) {
     if (is.logical(ret.vals)) return(num) else return(ret.vals)
 }
 
+# Generate FIBONACCI numbers (FAANG Feb 2022)
+Num_fibonacci <-function(x){
+num <-c(0, 1)
+i =2
+for (i in i:(x-1)){
+num[i+1] <-num[i]+num[i-1]
+}
+num <-num[1:length(num)]
+return(num)
+}
+Num_fibonacci(x)
 
 
 
