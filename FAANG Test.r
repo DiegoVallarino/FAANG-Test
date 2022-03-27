@@ -13,9 +13,40 @@ faangTest1 <- function (x) {
 vec <- Vectorize(faangTest1, vectorize.args = "x")
 vec(x)
 
-#Exercise TWO
-
-faangTest2 <- function(x){
-  return(abs(x)/(2))
+# Calculate the mean of each number in a vector (Microsoft March 2022)
+media <- function(x){
+    return(abs(x)/(2))
 }
-faangTest2(x)
+media(x)
+
+# Generate a random sample, show the repeated numbers and calculate the sum, the max, and the min. (Microsoft March 2022)
+set.seed(1234)
+df<-sample(1:100, 100, replace = TRUE)
+df
+df[duplicated(df)]
+dfd<-df[duplicated(df)]
+dfnd<-df[!duplicated(df)]
+max(dfd)
+min(dfd)
+table(dfd)
+sort(table(dfd))
+
+# What are the prime numbers that appear in a number X
+FactoresPrimos <- function(num) {
+
+    current <- num
+    ret.vals <- vector()
+    x <- 2
+    while (x <= num - 1){
+        while (current %% x == 0) {
+            current <- current / x
+            ret.vals <- c(ret.vals, x)
+        }
+        x <- x + 1
+    }
+    if (is.logical(ret.vals)) return(num) else return(ret.vals)
+}
+
+
+
+
