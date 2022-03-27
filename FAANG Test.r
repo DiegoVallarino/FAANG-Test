@@ -1,8 +1,7 @@
 #These are some of the exercises that the Tech companies put to evaluate the DS with +18 years of experience.
 #In my opinion, valueless.
 
-#Exercise ONE
-
+#Exercise ONE (Example)
 x<-seq(1:10)
 faangTest1 <- function (x) {
      if (x > 5) { print("poronga")}
@@ -13,13 +12,13 @@ faangTest1 <- function (x) {
 vec <- Vectorize(faangTest1, vectorize.args = "x")
 vec(x)
 
-# Calculate the mean of each number in a vector (Microsoft March 2022)
+# Calculate the mean of each number in a vector (FAANG March 2022)
 media <- function(x){
     return(abs(x)/(2))
 }
 media(x)
 
-# Generate a random sample, show the repeated numbers and calculate the sum, the max, and the min. (Microsoft March 2022)
+# Generate a random sample, show the repeated numbers and calculate the sum, the max, and the min. (FAANG March 2022)
 set.seed(1234)
 df<-sample(1:100, 100, replace = TRUE)
 df
@@ -31,7 +30,7 @@ min(dfd)
 table(dfd)
 sort(table(dfd))
 
-# What are the prime numbers that appear in a number X
+# What are the prime numbers that appear in a number X (FAANG Feb 2022)
 FactoresPrimos <- function(num) {
     current <- num
     ret.vals <- vector()
