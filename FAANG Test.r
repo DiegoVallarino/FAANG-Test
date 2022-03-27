@@ -1,5 +1,5 @@
-#These are some of the exercises that the FAANG companies put to evaluate the DS with +18 years of experience (my experience).
-#In my opinion, valueless if they are looking for a Director/Principal Data Scientist to add value to a business.
+# These are some of the exercises that the FAANG companies put to evaluate the DS with +18 years of experience (my experience).
+# In my opinion, valueless if they are looking for a Director/Principal Data Scientist to add value to a business.
 
 #Exercise ONE (Example)
 x<-seq(1:10)
@@ -8,9 +8,16 @@ faangTest1 <- function (x) {
      else { 
          if (x == 4) {return(x*1/2)}
          else {return(x**2)}}}
- 
 vec <- Vectorize(faangTest1, vectorize.args = "x")
 vec(x)
+
+# Replace NAs with the mean or median in an array (FAANG Feb 2022)
+NAfunc <- function(x) {
+ na_index <- which(is.na(x))        
+mean_x <- mean(x, na.rm=T)
+x[na_index] <- mean_x
+return(x)}
+df_clean <- apply(df,2,NAfunc)
 
 # What are the prime numbers that appear in a number X (FAANG Feb 2022)
 FactoresPrimos <- function(num) {
@@ -66,3 +73,6 @@ raiz <- function(x){
 raiz(x)
 sum(raiz(x))
 
+# Note: some questions were about SQL (more focused on queries than on data management) and I also did it with R. Just an example:
+library(sqldf)
+data_Male<-sqldf("SELECT * FROM data WHERE Sex like 'Male' ")
