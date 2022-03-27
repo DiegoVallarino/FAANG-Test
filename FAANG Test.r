@@ -12,24 +12,6 @@ faangTest1 <- function (x) {
 vec <- Vectorize(faangTest1, vectorize.args = "x")
 vec(x)
 
-# Calculate the mean of each number in a vector (FAANG March 2022)
-media <- function(x){
-    return(abs(x)/(2))
-}
-media(x)
-
-# Generate a random sample, show the repeated numbers and calculate the sum, the max, and the min. (FAANG March 2022)
-set.seed(1234)
-df<-sample(1:100, 100, replace = TRUE)
-df
-df[duplicated(df)]
-dfd<-df[duplicated(df)]
-dfnd<-df[!duplicated(df)]
-max(dfd)
-min(dfd)
-table(dfd)
-sort(table(dfd))
-
 # What are the prime numbers that appear in a number X (FAANG Feb 2022)
 FactoresPrimos <- function(num) {
     current <- num
@@ -57,5 +39,29 @@ return(num)
 }
 Num_fibonacci(x)
 
+# Calculate the mean of each number in a vector (FAANG March 2022)
+media <- function(x){
+    return(abs(x)/(2))
+}
+media(x)
 
+# Generate a random sample, show the repeated numbers and calculate the sum, the max, and the min. (FAANG March 2022)
+set.seed(1234)
+df<-sample(1:100, 100, replace = TRUE)
+df
+df[duplicated(df)]
+dfd<-df[duplicated(df)]
+dfnd<-df[!duplicated(df)]
+max(dfd)
+min(dfd)
+table(dfd)
+sort(table(dfd))
+
+# Generate the odd numbers from 1 to 100, calculate the square root of each one and add them. (FAANG March 2022)
+x<-seq(1,100,by=2) #números impares
+raiz <- function(x){
+    return(abs(x)**(1/2))
+}
+raiz(x)
+sum(raiz(x))
 
