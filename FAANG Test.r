@@ -54,6 +54,7 @@ dfd<-df[duplicated(df)]
 dfnd<-df[!duplicated(df)]
 max(dfd)
 min(dfd)
+sum(dfd)
 table(dfd)
 sort(table(dfd))
 
