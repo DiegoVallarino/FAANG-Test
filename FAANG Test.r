@@ -33,7 +33,6 @@ sort(table(dfd))
 
 # What are the prime numbers that appear in a number X
 FactoresPrimos <- function(num) {
-
     current <- num
     ret.vals <- vector()
     x <- 2
