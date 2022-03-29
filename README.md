@@ -1,2 +1,3 @@
 # FAANG-Test
-type of technical test for Senior Data Scientist (Director / Principal)
+Some of the tests I have done in training based on technical interviews and leetcode in R & SQL.
+If you want to see them contact me.
