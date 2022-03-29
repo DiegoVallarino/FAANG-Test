@@ -76,3 +76,13 @@ sum(raiz(x))
 # Note: some questions were about SQL (more focused on queries than on data management) and I also did it with R. Just an example:
 library(sqldf)
 data_Male<-sqldf("SELECT * FROM data WHERE Sex like 'Male' ")
+
+# SOME OTHERS EXAMPLES OF TECHNICAL QUESTIONS
+#Given two integers a and b, return the sum of the two integers without using the operators + and -
+x<-7
+y<-3
+sum(x,y)
+
+
+
+
