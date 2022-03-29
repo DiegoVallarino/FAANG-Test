@@ -77,12 +77,23 @@ sum(raiz(x))
 library(sqldf)
 data_Male<-sqldf("SELECT * FROM data WHERE Sex like 'Male' ")
 
-# SOME OTHERS EXAMPLES OF TECHNICAL QUESTIONS
-#Given two integers a and b, return the sum of the two integers without using the operators + and -
+# SOME OTHERS EXAMPLES OF TECHNICAL QUESTIONS (from leetcode, solution in R)
+#Given two integers a and b, return the sum of the two integers without using the operators + and - (leetcode - Medium)
 x<-7
 y<-3
 sum(x,y)
 
+# Find the Duplicate Number (leetcode - Medium)
+df<-sample(1:50, 50, replace = TRUE)
+dfd<-df[duplicated(df)]
+table(dfd)
+sort(table(dfd))
+
+# Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays (leetcode - Hard)
+A <- matrix(c(10, 8, 5, 12, 15, 19), ncol = 2, byrow = TRUE)
+B <- matrix(c(5, 3, 15, 6, 10, 12), ncol = 2, byrow = TRUE)
+X<-(A+B)/2
+X ---- # Note: If the distribution is symmetric then the mean is equal to the median and the distribution will have zero skewness.
 
 
 
