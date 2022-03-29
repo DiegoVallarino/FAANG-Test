@@ -97,10 +97,7 @@ X ---- # Note: If the distribution is symmetric then the mean is equal to the me
 # Given two integers dividend and divisor, divide two integers without using multiplication, division, and mod operator. (leetcode - Hard)
 dividend = 10
 divisor = 3
- 10%/%3
-
-# Given a string n representing an integer, return the closest integer (not including itself), which is a palindrome. If there is a tie, return the smaller one. (leetcode - Hard)
- 
+ 10%/%3 
 
 
 
