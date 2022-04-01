@@ -96,8 +96,8 @@ X ---- # Note: If the distribution is symmetric then the mean is equal to the me
 
 # Given two integers dividend and divisor, divide two integers without using multiplication, division, and mod operator. (leetcode - Hard)
 dividend = 10
-dividend = 3
-div(dividend,dividend) 
+divisor = 3
+div(dividend,divisor) 
 
 
 
